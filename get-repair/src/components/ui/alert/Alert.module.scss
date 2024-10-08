@@ -1,0 +1,18 @@
+@import 'src/assets/styles/animations';
+@import 'src/assets/styles/variables';
+
+.alert {
+	position: fixed;
+	top: 50%;
+	right: -300px;
+	background-color: rgba(96, 89, 89, 0.421);
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 5px;
+	z-index: 4;
+	animation: slideIn 0.5s forwards;
+}
+
+.alert-hidden {
+	animation: slideOut 0.5s forwards;
+}

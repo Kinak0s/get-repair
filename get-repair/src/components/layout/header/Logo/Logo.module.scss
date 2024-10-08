@@ -1,0 +1,36 @@
+@import 'src/assets/styles/animations';
+@import 'src/assets/styles/variables';
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+
+	a {
+		animation: rotate 1.5s ease-in-out;
+	}
+
+	span {
+		margin-top: 6px;
+		font-size: 24px;
+		font-weight: bold;
+		color: #fff;
+	}
+
+	@media (max-width: 768px) {
+		margin: 20px;
+		span {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 1006px) {
+	.logo {
+		span {
+			font-size: 18px;
+		}
+	}
+}

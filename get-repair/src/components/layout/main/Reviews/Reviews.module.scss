@@ -1,0 +1,114 @@
+@import 'src/assets/styles/variables';
+
+.slider {
+	width: 80%;
+	margin: auto;
+	min-height: 300px;
+	border-radius: 8px;
+	overflow: hidden;
+	margin-bottom: 40px;
+	h2 {
+		text-align: center;
+	}
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.controls button {
+	background-color: rgba(245, 242, 242, 0.154);
+	color: white;
+	border: none;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin: 4px;
+	cursor: pointer;
+}
+
+.controls button:hover {
+	background-color: $accent;
+}
+
+.reviews {
+	display: flex;
+	transition: transform 0.5s ease;
+}
+
+.review {
+	min-width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+	display: none;
+	text-align: center;
+}
+
+.review.active {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
+.dots {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.dot:hover {
+	background-color: #333333;
+}
+
+.activeDot {
+	background-color: $accent;
+}
+
+@media (max-width: 768px) {
+	.slider {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.header {
+		flex-direction: column;
+		h2 {
+			margin-bottom: 10px;
+		}
+	}
+
+	.controls button {
+		padding: 8px 16px;
+		margin: 0 4px;
+	}
+
+	.review {
+		padding: 10px;
+
+		img {
+			min-height: 50px;
+		}
+	}
+
+	.dot {
+		width: 8px;
+		height: 8px;
+		margin: 0 4px;
+	}
+}

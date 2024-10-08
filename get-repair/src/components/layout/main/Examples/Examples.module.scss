@@ -1,0 +1,50 @@
+.examples {
+	margin: 20px 0;
+	text-align: center;
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+
+		th,
+		td {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: center;
+		}
+
+		th {
+			background-color: rgba(0, 0, 0, 0.3);
+			color: white;
+		}
+	}
+
+	.image {
+		height: auto;
+		width: 200px;
+	}
+
+	h2 {
+		font-size: 26px;
+		font-weight: bold;
+		text-align: center;
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.examples {
+		h2 {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			letter-spacing: 1px;
+		}
+
+		th,
+		td {
+			font-size: 16px;
+		}
+	}
+}
